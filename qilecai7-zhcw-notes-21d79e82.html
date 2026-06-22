@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>七星彩 · 日常对照与延伸阅读</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f9fafc;
+      color: #1e293b;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.8rem 1.5rem 4rem;
+    }
+
+    /* hero */
+    .hero {
+      margin-bottom: 3.2rem;
+    }
+    .hero__tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #6b7280;
+      border: 1px solid #e2e8f0;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: -.02em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: #0a0f1e;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: #475569;
+      max-width: 580px;
+    }
+
+    /* 通用章节 */
+    section {
+      margin-bottom: 2.8rem;
+    }
+    section h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+      color: #0f172a;
+      letter-spacing: -.01em;
+    }
+    section p, section li {
+      color: #334155;
+      margin-bottom: 0.75rem;
+    }
+
+    /* 优势卡片（极简型） */
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 0.25rem;
+    }
+    .benefit-card {
+      background: white;
+      border-radius: 16px;
+      padding: 1.25rem 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      border: 1px solid #eef2f6;
+      transition: box-shadow 0.2s;
+    }
+    .benefit-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+    .benefit-card em {
+      display: block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+      color: #1e293b;
+    }
+    .benefit-card span {
+      font-size: 0.9rem;
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+    /* 说明区 · 折叠式引用 */
+    .note-block {
+      background: #ffffff;
+      border-left: 4px solid #b9c8da;
+      padding: 1rem 1.3rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    .note-block p {
+      margin-bottom: 0.3rem;
+    }
+
+    /* FAQ 摘要 */
+    .faq-list {
+      list-style: none;
+      padding: 0;
+    }
+    .faq-list li {
+      border-bottom: 1px solid #e9edf2;
+      padding: 0.75rem 0;
+    }
+    .faq-list li:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-weight: 500;
+      color: #0f172a;
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+    .faq-a {
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    /* 底部 */
+    .footer-links {
+      margin-top: 3.5rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.2rem;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+    .footer-links a {
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .footer-links a:hover {
+      border-bottom-color: #2563eb;
+    }
+    .footer-note {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+
+    /* 响应式 */
+    @media (max-width: 480px) {
+      .page { padding: 2rem 1rem 3rem; }
+      .hero h1 { font-size: 1.8rem; }
+      .benefit-grid { grid-template-columns: 1fr; }
+    }
+
+    /* 内联链接融入句子 */
+    .inline-link {
+      color: #1d4ed8;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #b9c8da;
+      font-weight: 500;
+    }
+    .inline-link:hover {
+      text-decoration-color: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- hero 区 -->
+    <header class="hero">
+      <span class="hero__tag">对照 · 阅读 · 日常</span>
+      <h1>七星彩<br>一次安静的翻阅</h1>
+      <p>不是为了追逐，而是为了了解。在数字与概率之间，保持一种温和的观察习惯。</p>
+    </header>
+
+    <!-- 优势区：日常查询与延伸阅读的视角 -->
+    <section>
+      <h2>为什么把它放在案头</h2>
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <em>📋 快速对照</em>
+          <span>开奖号码、历史期次，一目了然。适合偶尔翻阅、核对。</span>
+        </div>
+        <div class="benefit-card">
+          <em>📎 延伸阅读</em>
+          <span>围绕数字组合、冷热分布，提供背景知识而非预测。</span>
+        </div>
+        <div class="benefit-card">
+          <em>🧩 碎片时间</em>
+          <span>无需注册，不推送信息。打开即用，用完即走。</span>
+        </div>
+        <div class="benefit-card">
+          <em>🔍 无干扰界面</em>
+          <span>极简信息流，只保留数字与必要说明，减少视觉负担。</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 说明区：从查询到理解 -->
+    <section>
+      <h2>从「查一下」到「看一看」</h2>
+      <p>很多人打开 <a href="https://qilecai7-zhcw.com" class="inline-link">七星彩</a> 页面，只是为了快速确认一个数字。但有时候，你会多停留一会儿：今天有哪些组合？最近十期走势如何？</p>
+      <p>这个页面正是为这种「顺便看一眼」的习惯准备的。没有催促，没有弹窗，只有干净的数据陈列和几段背景说明。</p>
+      <div class="note-block">
+        <p><strong>一点提醒</strong> · 数字游戏本质上是一种随机排列。所有的冷热、遗漏、跨度都只是统计角度，不代表规律。保持轻松的观察心态就好。</p>
+      </div>
+    </section>
+
+    <!-- FAQ 摘要：读者常问的几件事 -->
+    <section>
+      <h2>常见疑问 · 摘要</h2>
+      <ul class="faq-list">
+        <li>
+          <span class="faq-q">七星彩的开奖频率？</span>
+          <span class="faq-a">每周二、五、日开奖，遇法定节假日可能调整，具体以官方公告为准。</span>
+        </li>
+        <li>
+          <span class="faq-q">如何查询最新号码？</span>
+          <span class="faq-a">在 <a href="https://qilecai7-zhcw.com" class="inline-link">七星彩</a> 页面可以看到最新期次及历史数据，页面通常会在开奖后数小时内更新。</span>
+        </li>
+        <li>
+          <span class="faq-q">页面上的「冷热统计」是什么意思？</span>
+          <span class="faq-a">指每个数字在最近若干期里出现的次数，仅供参考，不代表下一期出现概率。</span>
+        </li>
+        <li>
+          <span class="faq-q">需要注册或下载 App 吗？</span>
+          <span class="faq-a">不需要。直接通过浏览器访问即可，所有信息公开可见。</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 底部链接区 -->
+    <footer class="footer-links">
+      <a href="https://qilecai7-zhcw.com">七星彩</a>
+      <span>·</span>
+      <a href="#">开奖日历</a>
+      <a href="#">数字分布</a>
+      <a href="#">玩法说明</a>
+      <span class="footer-note">非官方 · 仅作为信息整合与阅读参考</span>
+    </footer>
+
+  </div>
+</body>
+</html>
